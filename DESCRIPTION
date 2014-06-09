@@ -1,0 +1,19 @@
+Package: spmR
+Title: Statistical Parametric Mapping in R
+Version: 0.8-2
+Author: Yves Rosseel <Yves.Rosseel@UGent.be> with contributions from Joke Durnez <Joke.Durnez@UGent.be>
+Maintainer: John Pellman <pellman.john@gmail.com> 
+Description: SPM is a MATLAB software package implementing Statistical 
+             Parametric Mapping for neuroimaging data 
+             (http://www.fil.ion.ucl.ac.uk/spm/). This package
+             has ported some of the core statistical routines of SPM
+             to R. The goal is to be able to run a standard SPM analysis
+             in R. This is convenient if MATLAB is not available (for
+             example in a High Performance Computing environment) or if
+             the SPM analysis is only part of a larger pipeline written
+             in R.
+Depends: R (>= 2.10.1), methods, Rniftilib
+License: GPL-2
+LazyLoad: yes
+LazyData: yes
+Packaged: 2011-12-20 16:30:12 UTC; yves

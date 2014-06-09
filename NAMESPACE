@@ -1,0 +1,7 @@
+useDynLib("spmR")
+
+export("spmr_fmri_specify_1stlevel",
+       "spmr_fmri_estimate",
+       "spmr_contrasts",
+       "spmr_results",
+       "spmr_write_images")
