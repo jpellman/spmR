@@ -13,4 +13,5 @@ To wit, there are several advantages that an implementation of SPM built upon R 
 
 # Relevant links:
 Slides from a presentation by the original author describing spmR: http://www.wias-berlin.de/workshops/neuroimaging2011/slides/rosseel.pdf
+
 The official website of the creators of SPM: http://www.fil.ion.ucl.ac.uk/spm/
