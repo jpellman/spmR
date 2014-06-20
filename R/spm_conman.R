@@ -1,4 +1,6 @@
-# Contrast manager: GUI for defining valid contrasts
+#' @name spm_conman
+#' @title SPM Contrast Manager
+#' @description Contrast manager for spmR.
 # FORMAT varargout=spm_conman(varargin)
 #       - An embedded callback, multi-function function
 #       - For detailed programmers comments,
@@ -6,13 +8,11 @@
 
 # FORMAT [c,I,emsg,imsg,msg] = spm_conman('ParseCon',cstr,X,STAT)
 # Contrast weights parser: Catch evaluation errors and invalid contrasts
-# cstr       - string (or cellstr) to evaluate to get contrast(s)
-# X          - design matrix
-# STAT       - 'T' or 'F' (for contrast checking)
-# c          - contrast weights matrix
-# I          - logical validity indicator: indicates which rows of
-#              cellstr(cstr) generated valid contrasts which were
-#              included in c
+#' @param cstr string (or cellstr) to evaluate to get contrast(s)
+#' @param X design matrix
+#' @param STAT 'T' or 'F' (for contrast checking)
+#' @param c contrast weights matrix
+#' @param I logical validity indicator: indicates which rows of cellstr(cstr) generated valid contrasts which were included in c
 # emsg       - cellstr of error messages produced during parsing
 # imsg       - cellstr of information messages for valid contrasts
 # msg        - cellstr of all messages produced during parsing,
@@ -22,10 +22,10 @@ spm_conman <- function(action="ParseCon", cstr, X, STAT="F") {
 
     action <- tolower(action)
 
-    # only 'parsecon' for now!
-    stopifnot(action == "parsecon")
+    # only 'ParseCon' for now!
+    stopifnot(action == "ParseCon")
 
-    if(action == "parsecon") {
+    if(action == "ParseCon") {
         p <- spm_SpUtil("size", X, 2)
      
         # FIXME: we assume cstr is a single vector/matrix
@@ -53,6 +53,6 @@ spm_conman <- function(action="ParseCon", cstr, X, STAT="F") {
         return(c)
     } else
 
-    stop("unknow action argument in spm_conman function")
+    stop("unknown action argument in spm_conman function")
 }
 
