@@ -1,26 +1,27 @@
+#' @name spm_P_Bonf
 #function P = spm_P_Bonf(Z,df,STAT,S,n)
-# Returns the corrected P value using Bonferroni
-# FORMAT P = spm_P_Bonf(Z,df,STAT,S,n)
+#' @title SPM: Returns the corrected P value using Bonferroni
+#' @usage P = spm_P_Bonf(Z,df,STAT,S,n)
 #
-# Z     - height {minium over n values}
-# df    - [df{interest} df{error}]
-# STAT  - Statistical field
-#       'Z' - Gaussian field
-#       'T' - T - field
-#       'X' - Chi squared field
-#       'F' - F - field
-# n     - number of conjoint SPMs
-# S     - Voxel count
+#' @param Z     - height {minium over n values}
+#' @param df    - [df{interest} df{error}]
+#' @param STAT  - Statistical field
+#'       'Z' - Gaussian field
+#'       'T' - T - field
+#'       'X' - Chi squared field
+#'       'F' - F - field
+#' @param n     - number of conjoint SPMs
+#' @param S     - Voxel count
 #
-# P     - corrected   P value  - P(STAT > Z)
+#' @return P     - corrected   P value  - P(STAT > Z)
 #
 #___________________________________________________________________________
 #
-# spm_P_Bonf returns the p-value of Z corrected by the Bonferroni
-# inequality. 
-#
-# If n > 1 a conjunction probility over the n values of the statistic
-# is returned
+#' @description spm_P_Bonf returns the p-value of Z corrected by the Bonferroni
+#' inequality. 
+#'
+#' If n > 1 a conjunction probility over the n values of the statistic
+#' is returned
 #
 #___________________________________________________________________________
 # MATLAB version: Copyright (C) 2008 Wellcome Trust Centre for Neuroimaging
