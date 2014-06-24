@@ -1,13 +1,14 @@
-# Compute a specified and thresholded SPM/PPM following estimation
-# FORMAT [SPM,xSPM] = spm_getSPM;
-# Query SPM in interactive mode.
+#' @name spm_getSPM
+#' @title SPM: Compute a specified and thresholded SPM/PPM following estimation
+#' @usage FORMAT [SPM,xSPM] = spm_getSPM;
+#' Query SPM in interactive mode.
+#'
+#' FORMAT [SPM,xSPM] = spm_getSPM(xSPM);
+#' Query SPM in batch mode. See below for a description of fields that may
+#' be present in xSPM input. Values for missing fields will be queried
+#' interactively.
 #
-# FORMAT [SPM,xSPM] = spm_getSPM(xSPM);
-# Query SPM in batch mode. See below for a description of fields that may
-# be present in xSPM input. Values for missing fields will be queried
-# interactively.
-#
-# xSPM      - structure containing SPM, distribution & filtering details
+#' @return xSPM      - structure containing SPM, distribution & filtering details
 # .swd      - SPM working directory - directory containing current SPM.mat
 # .title    - title for comparison (string)
 # .Z        - minimum of Statistics {filtered on u and k}

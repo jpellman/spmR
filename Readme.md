@@ -18,6 +18,9 @@ The official website of the creators of SPM: http://www.fil.ion.ucl.ac.uk/spm/
 
 # To do:
 * Rewrite documentation in comments at the heads of functions to documentation that can be roxygenized.
+	* First pass- basic addition of tags
+	* Second pass - re-order tags sensibly, make style consistent
+	* Third pass - make documentation consistent with the idiosyncrasies of R rather than MATLAB
 * Add support for preprocessing.
 * Any of the various other TODOs that I come across in the code- these should be added to this list as they are discovered.
 * Rewrite documentation for unported spm functions as roxygen comments.

@@ -1,35 +1,29 @@
+#' @name spm_P
 #function [P,p,Ec,Ek] = spm_P(c,k,Z,df,STAT,R,n,S)
-# Returns the [un]corrected P value using unifed EC theory
-# FORMAT [P p Ec Ek] = spm_P(c,k,Z,df,STAT,R,n,S)
+#' @title SPM: Returns the [un]corrected P value using unifed EC theory
+#' @usage FORMAT [P p Ec Ek] = spm_P(c,k,Z,df,STAT,R,n,S)
 #
-# c     - cluster number 
-# k     - extent {RESELS}
-# Z     - height {minimum over n values}
-# df    - [df{interest} df{error}]
-# STAT  - Statistical field
-#       'Z' - Gaussian field
-#       'T' - T - field
-#       'X' - Chi squared field
-#       'F' - F - field
-#       'P' - Posterior probability
-# R     - RESEL Count {defining search volume}
-# n     - number of component SPMs in conjunction
-# S     - Voxel count
+#' @param c - cluster number 
+#' @param k - extent {RESELS}
+#' @param Z - height {minimum over n values}
+#' @param df - [df{interest} df{error}]
+#' @param STAT  - Statistical field: 'Z' - Gaussian field, 'T' - T - field, 'X' - Chi squared field, 'F' - F - field,  'P' - Posterior probability
+#' @param R - RESEL Count {defining search volume}
+#' @param n - number of component SPMs in conjunction
+#' @param S - Voxel count
 #
-# P     - corrected   P value - P(C >= c | K >= k}
-# p     - uncorrected P value
-# Ec    - expected total number of clusters
-# Ek    - expected total number of resels per cluster
+#' @return A list containing: P     - corrected   P value - P(C >= c | K >= k}, p     - uncorrected P value, 
+#' Ec    - expected total number of clusters and Ek    - expected total number of resels per cluster
 #
 #__________________________________________________________________________
 #
-# spm_P determines corrected and uncorrected p values, using the minimum
-# of different valid methods. 
+#' @description spm_P determines corrected and uncorrected p values, using the minimum
+#' of different valid methods. 
+#'
+#' See the individual methods for details
 #
-# See the individual methods for details
-#
-#     spm_P_RF
-#     spm_P_Bonf
+#' @seealso spm_P_RF
+#' @seealso spm_P_Bonf
 #
 #__________________________________________________________________________
 # MATLAB version: Copyright (C) 2008 Wellcome Trust Centre for Neuroimaging
