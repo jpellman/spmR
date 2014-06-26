@@ -1,18 +1,21 @@
-# Contrast utilities
-# FORMAT varargout = spm_FcUtil(action,varargin)
+## 6/25.  This documentation is also quite unwieldy to reformat.
+
+#' @name spm_FcUtil
+#' @title SPM: Contrast utilities
+#' @usage varargout = spm_FcUtil(action,varargin)
 #_______________________________________________________________________
 #
-# spm_FcUtil is a multi-function function containing various utilities
-# for contrast construction and manipulation. In general, it accepts
-# design matrices as plain matrices or as space structures setup by
-# spm_sp (that is preferable in general).
-# 
-# The use of spm_FcUtil should help with robustness issues and
-# maintainability of SPM.  # Note that when space structures are passed
-# as arguments is is assummed that their basic fields are filled in.
-# See spm_sp for details of (design) space structures and their
-# manipulation.
-#
+#' @description spm_FcUtil is a multi-function function containing various utilities
+#' for contrast construction and manipulation. In general, it accepts
+#' design matrices as plain matrices or as space structures setup by
+#' spm_sp (that is preferable in general).
+#' 
+#' The use of spm_FcUtil should help with robustness issues and
+#' maintainability of SPM.  # Note that when space structures are passed
+#' as arguments is is assummed that their basic fields are filled in.
+#' See spm_sp for details of (design) space structures and their
+#' manipulation.
+#' @seealso spm_sp
 #
 # ======================================================================
 # case 'fconfields'             #- fields of F contrast

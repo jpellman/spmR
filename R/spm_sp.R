@@ -1,25 +1,28 @@
-# Orthogonal (design) matrix space setting & manipulation
-# FORMAT varargout = spm_spc(action,varargin)
-#
-# This function computes the different projectors related to the row
-# and column spaces X. It should be used to avoid redundant computation
-# of svd on large X matrix.  It is divided into actions that set up the
-# space, (Create,Set,...) and actions that compute projections (pinv,
-# pinvXpX, pinvXXp, ...) This is motivated by the problem of rounding
-# errors that can invalidate some computation and is a tool to work
-# with spaces.
-#
-# The only thing that is not easily computed is the null space of
-# the line of X (assuming size(X,1) > size(X,2)).
-# To get this space (a basis of it or a projector on it) use spm_sp on X'.
-#
-# The only restriction on the use of the space structure is when X is
-# so big that you can't fit X and its svd in memory at the same time.
-# Otherwise, the use of spm_sp will generally speed up computations and
-# optimise memory use.
-#
-# Note that since the design matrix is stored in the space structure,
-# there is no need to keep a separate copy of it.
+## 6/25. This might also be trickier to roxygenize.
+
+#' @name spm_sp
+#' @title SPM: Orthogonal (design) matrix space setting & manipulation
+#' @usage varargout = spm_spc(action,varargin)
+#'
+#' @description This function computes the different projectors related to the row
+#' and column spaces X. It should be used to avoid redundant computation
+#' of svd on large X matrix.  It is divided into actions that set up the
+#' space, (Create,Set,...) and actions that compute projections (pinv,
+#' pinvXpX, pinvXXp, ...) This is motivated by the problem of rounding
+#' errors that can invalidate some computation and is a tool to work
+#' with spaces.
+#'
+#' The only thing that is not easily computed is the null space of
+#' the line of X (assuming size(X,1) > size(X,2)).
+#' To get this space (a basis of it or a projector on it) use spm_sp on X'.
+#'
+#' The only restriction on the use of the space structure is when X is
+#' so big that you can't fit X and its svd in memory at the same time.
+#' Otherwise, the use of spm_sp will generally speed up computations and
+#' optimise memory use.
+#'
+#' Note that since the design matrix is stored in the space structure,
+#' there is no need to keep a separate copy of it.
 #
 #                           ----------------
 #

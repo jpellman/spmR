@@ -1,46 +1,50 @@
-# Space matrix utilities
-# FORMAT varargout = spm_SpUtil(action,varargin)
+## 6/25.  I don't even know where to start with roxygenizing this.  Return to at
+## end of first pass.
+
+#' @name spm_SpUtil
+#' @title SPM: Space matrix utilities
+#' @usage varargout = spm_SpUtil(action,varargin)
 #
 #_______________________________________________________________________
 #
-# spm_SpUtil is a multi-function function containing various utilities
-# for Design matrix and contrast construction and manipulation. In
-# general, it accepts design matrices as plain matrices or as space
-# structures setup by spm_sp.
+#' @description spm_SpUtil is a multi-function function containing various utilities
+#' for Design matrix and contrast construction and manipulation. In
+#' general, it accepts design matrices as plain matrices or as space
+#' structures setup by spm_sp.
+#'
+#' Many of the space utilities are computed using an SVD of the design
+#' matrix. The advantage of using space structures is that the svd of
+#' the design matrix is stored in the space structure, thereby saving
+#' unnecessary repeated computation of the SVD. This presents a
+#' considerable efficiency gain for large design matrices.
+#'
+#' Note that when space structures are passed as arguments is is
+#' assummed that their basic fields are filled in. See spm_sp for
+#' details of (design) space structures and their manipulation.
 #
-# Many of the space utilities are computed using an SVD of the design
-# matrix. The advantage of using space structures is that the svd of
-# the design matrix is stored in the space structure, thereby saving
-# unnecessary repeated computation of the SVD. This presents a
-# considerable efficiency gain for large design matrices.
-#
-# Note that when space structures are passed as arguments is is
-# assummed that their basic fields are filled in. See spm_sp for
-# details of (design) space structures and their manipulation.
-#
-# Quick Reference    :
-#---------------------
-# ('isCon',x,c)      :
-# ('allCon',x,c)     :
-# ('ConR',x,c)       :
-# ('ConO',x,c)       :
-# ('size',x,dim)     :
-# ('iX0check',i0,sL) :
-#---------------------
-# ('i0->c',x,i0)     : Out : c
-# ('c->Tsp',x,c)     : Out : [X1o [X0]]
-# ('+c->Tsp',x,c)    : Out : [ukX1o [ukX0]]
-# ('i0->x1o',x,i0)   : Use ('i0->c',x,i0) and ('c->Tsp',X,c)
-# ('+i0->x1o',x,i0)  : Use ('i0->c',x,i0) and ('+c->Tsp',X,c)
-# ('X0->c',x,X0)     :~ 
-# ('+X0->c',x,cukX0) :~ 
-#---------------------
-# ('trRV',x[,V])     :
-# ('trMV',x[,V])     :
-# ('i0->edf',x,i0,V) :
-#
-#---------------------
-#---------------------
+#' @usage Quick Reference    :
+#'---------------------
+#' ('isCon',x,c)      :
+#' ('allCon',x,c)     :
+#' ('ConR',x,c)       :
+#' ('ConO',x,c)       :
+#' ('size',x,dim)     :
+#' ('iX0check',i0,sL) :
+#'---------------------
+#' ('i0->c',x,i0)     : Out : c
+#' ('c->Tsp',x,c)     : Out : [X1o [X0]]
+#' ('+c->Tsp',x,c)    : Out : [ukX1o [ukX0]]
+#' ('i0->x1o',x,i0)   : Use ('i0->c',x,i0) and ('c->Tsp',X,c)
+#' ('+i0->x1o',x,i0)  : Use ('i0->c',x,i0) and ('+c->Tsp',X,c)
+#' ('X0->c',x,X0)     :~ 
+#' ('+X0->c',x,cukX0) :~ 
+#'---------------------
+#' ('trRV',x[,V])     :
+#' ('trMV',x[,V])     :
+#' ('i0->edf',x,i0,V) :
+#'
+#'---------------------
+#'---------------------
 #
 # Improvement compared to the spm99 beta version :
 #

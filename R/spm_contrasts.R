@@ -1,8 +1,10 @@
-# Fills in SPM.xCon and writes con_????.img, ess_????.img and SPM?_????.img
-# FORMAT [SPM] = spm_contrasts(SPM,Ic)
+#' @name spm_contrasts
+#' @title SPM: Fills in SPM.xCon and writes con_????.img, ess_????.img and SPM?_????.img
+#' @usage [SPM] = spm_contrasts(SPM,Ic)
 #
-# SPM - SPM data structure
-# Ic  - indices of xCon to compute
+#' @param SPM SPM data structure
+#' @param Ic indices of xCon to compute
+#' @return SPM data structure
 
 spm_contrasts <- function(SPM, Ic=1:length(SPM$xCon)) {
 

@@ -1,38 +1,39 @@
-# returns dx(t) = (expm(dfdx*t) - I)*inv(dfdx)*f
-# FORMAT [dx] = spm_dx(dfdx,f,[t])
-# dfdx   = df/dx
-# f      = dx/dt
-# t      = integration time: (default t = Inf);
-#          if t is a cell (i.e., {t}) then t is set to:
-#          exp(t - log(diag(-dfdx))
+#' @name spm_dx
+#' @title SPM: returns dx(t) = (expm(dfdx*t) - I)*inv(dfdx)*f
+#' @usage [dx] = spm_dx(dfdx,f,[t])
+#' @param dfdx df/dx
+#' @param f dx/dt
+#' @param t integration time: (default t = Inf);
+#'          if t is a cell (i.e., {t}) then t is set to:
+#'          exp(t - log(diag(-dfdx))
 #
-# dx     = x(t) - x(0)
+#' @return x(t) - x(0)
 #--------------------------------------------------------------------------
-# Integration of a dynamic system using local linearization.  This scheme
-# accommodates nonlinearities in the state equation by using a functional of
-# f(x) = dx/dt.  This uses the equality
-#
-#             expm([0   0     ]) = (expm(t*dfdx) - I)*inv(dfdx)*f
-#                  [t*f t*dfdx]
-#
-# When t -> Inf this reduces to
-#
-#              dx(t) = -inv(dfdx)*f
-#
-# These are the solutions to the gradient ascent ODE
-#
-#            dx/dt   = k*f = k*dfdx*x =>
-#
-#            dx(t)   = expm(t*k*dfdx)*x(0)
-#                    = expm(t*k*dfdx)*inv(dfdx)*f(0) -
-#                      expm(0*k*dfdx)*inv(dfdx)*f(0)
-#
-# When f = dF/dx (and dfdx = dF/dxdx), dx represents the update from a
-# Gauss-Newton ascent on F.  This can be regularised by specifying {t}
-# A heavy regularization corresponds to t = -4 and a light
-# regularization would be t = 4. This version of spm_dx uses an augmented
-# system and the Pade approximation to compute requisite matrix
-# exponentials
+#' @description Integration of a dynamic system using local linearization.  This scheme
+#' accommodates nonlinearities in the state equation by using a functional of
+#' f(x) = dx/dt.  This uses the equality
+#'
+#'             expm([0   0     ]) = (expm(t*dfdx) - I)*inv(dfdx)*f
+#'                  [t*f t*dfdx]
+#'
+#' When t -> Inf this reduces to
+#'
+#'              dx(t) = -inv(dfdx)*f
+#'
+#' These are the solutions to the gradient ascent ODE
+#'
+#'            dx/dt   = k*f = k*dfdx*x =>
+#'
+#'            dx(t)   = expm(t*k*dfdx)*x(0)
+#'                    = expm(t*k*dfdx)*inv(dfdx)*f(0) -
+#'                      expm(0*k*dfdx)*inv(dfdx)*f(0)
+#'
+#' When f = dF/dx (and dfdx = dF/dxdx), dx represents the update from a
+#' Gauss-Newton ascent on F.  This can be regularised by specifying {t}
+#' A heavy regularization corresponds to t = -4 and a light
+#' regularization would be t = 4. This version of spm_dx uses an augmented
+#' system and the Pade approximation to compute requisite matrix
+#' exponentials
 
 spm_dx <- function(dfdx, f, t=Inf) {
 

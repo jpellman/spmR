@@ -1,24 +1,24 @@
-# ReML estimation of [improper] covariance components from y*y'
-# FORMAT [C,h,Ph,F,Fa,Fc] = spm_reml(YY,X,Q,N,D,t);
+#' @name spm_reml
+#' @title SPM: ReML estimation of [improper] covariance components from y*y'
+#' @usage [C,h,Ph,F,Fa,Fc] = spm_reml(YY,X,Q,N,D,t);
 #
-# YY  - (m x m) sample covariance matrix Y*Y'  {Y = (m x N) data matrix}
-# X   - (m x p) design matrix
-# Q   - {1 x q} covariance components
-# N   - number of samples
-# D   - Flag for positive-definite scheme
-# t   - regularisation (default 4)
+#' @param YY (m x m) sample covariance matrix Y*Y'  {Y = (m x N) data matrix}
+#' @param X (m x p) design matrix
+#' @param Q {1 x q} covariance components
+#' @param N number of samples
+#' @param D Flag for positive-definite scheme
+#' @param t regularisation (default 4)
 #
-# C   - (m x m) estimated errors = h(1)*Q{1} + h(2)*Q{2} + ...
-# h   - (q x 1) ReML hyperparameters h
-# Ph  - (q x q) conditional precision of h
+#' @return A list containing:
+#' C   - (m x m) estimated errors = h(1)*Q{1} + h(2)*Q{2} + ..., 
+#' h   - (q x 1) ReML hyperparameters h, 
+#' Ph  - (q x q) conditional precision of h, 
+#' F   - [-ve] free energy F = log evidence = p(Y|X,Q) = ReML objective, 
+#' Fa  - accuracy, 
+#' Fc  - complexity (F = Fa - Fc)
 #
-# F   - [-ve] free energy F = log evidence = p(Y|X,Q) = ReML objective
-#
-# Fa  - accuracy
-# Fc  - complexity (F = Fa - Fc)
-#
-# Performs a Fisher-Scoring ascent on F to find ReML variance parameter
-# estimates.
+#' @description Performs a Fisher-Scoring ascent on F to find ReML variance parameter
+#' estimates.
 
 spm_reml <- function(YY, X, Q, N=1, D=0, t=4, verbose=FALSE) {
 

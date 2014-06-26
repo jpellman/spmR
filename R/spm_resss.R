@@ -1,11 +1,12 @@
-# Create residual sum of squares image (ResSS)
-# FORMAT Vo = spm_resss(Vi,Vo,R,flags)
-# Vi          - vector of mapped image volumes to work on (from spm_vol)
-# Vo          - handle structure for mapped output image volume
-# R           - residual forming matrix
-# flags       - 'm' for implicit zero masking
-# Vo (output) - handle structure of output image volume after modifications
-#                 for writing
+#' @name spm_resss
+#' @title SPM: Create residual sum of squares image (ResSS)
+#' @usage Vo = spm_resss(Vi,Vo,R,flags)
+#' @param Vi vector of mapped image volumes to work on (from spm_vol)
+#' @param Vo handle structure for mapped output image volume
+#' @param R residual forming matrix
+#' flags       - 'm' for implicit zero masking
+#' @return handle structure of output image volume after modifications
+#'                 for writing
 #
 
 spm_resss <- function(Vi, R, flags="") {

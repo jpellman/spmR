@@ -1,27 +1,28 @@
-# corrected critical height threshold at a specified significance level
-# FORMAT [u] = spm_uc(a,df,STAT,R,n,S)
-# a     - critical probability - {alpha}
-# df    - [df{interest} df{residuals}]
-# STAT  - Statistical field
-#       'Z' - Gaussian field
-#       'T' - T - field
-#       'X' - Chi squared field
-#       'F' - F - field
-# R     - RESEL Count {defining search volume}
-# n     - number of conjoint SPMs
-# S     - Voxel count
+#' @name spm_uc
+#' @title SPM: corrected critical height threshold at a specified significance level
+#' @usage [u] = spm_uc(a,df,STAT,R,n,S)
+#' @param a critical probability - {alpha}
+#' @param df [df{interest} df{residuals}]
+#' @param STAT Statistical field
+#'       ('Z' - Gaussian field,
+#'       'T' - T - field,
+#'       'X' - Chi squared field,
+#'       'F' - F - field)
+#' @param R RESEL Count {defining search volume}
+#' @param n number of conjoint SPMs
+#' @param S Voxel count
 #
-# u     - critical height {corrected}
+#' @return critical height {corrected}
 #
 #__________________________________________________________________________
 #
-# spm_uc corrected critical thresholds, using the minimum of different
-# valid methods.
+#' @description spm_uc corrected critical thresholds, using the minimum of different
+#' valid methods.
+#'
+#' See the individual methods for details
 #
-# See the individual methods for details
-#
-#     spm_uc_RF
-#     spm_uc_Bonf
+#' @seealso spm_uc_RF
+#' @seealso spm_uc_Bonf
 #
 #__________________________________________________________________________
 # MATLAB version: Copyright (C) 2008 Wellcome Trust Centre for Neuroimaging

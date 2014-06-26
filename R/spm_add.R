@@ -1,12 +1,13 @@
-# add a series of images - a compiled routine
-# FORMAT s = spm_add(VI,VO)
-# VI    - Vector of mapped volumes (from spm_map or spm_vol).
-# VO    - Description of output volume that gets passed to
-#         spm_write_plane.m
-# flags - Flags can be:
-#               'm' - masks the mean to zero or NaN wherever
-#                     a zero occurs in the input images.
-# s     - Scalefactor for output image.
+#' @name spm_add
+#' @title SPM: add a series of images
+#' @usage s = spm_add(VI,VO)
+#' @param VI Vector of mapped volumes (from spm_map or spm_vol).
+#' @param VO Description of output volume that gets passed to
+#'         spm_write_plane.m
+#' flags - Flags can be:
+#'               'm' - masks the mean to zero or NaN wherever
+#'                     a zero occurs in the input images.
+#' @return Scalefactor for output image.
 
 # NOTE: compiled routine in SPM
 

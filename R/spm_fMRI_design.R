@@ -1,5 +1,6 @@
-# Assembles a design for fMRI studies
-# FORMAT [SPM] = spm_fMRI_design(SPM)
+#' @title spm_fMRI_design
+#' @name SPM: Assembles a design for fMRI studies
+#' @usage [SPM] = spm_fMRI_design(SPM)
 #
 # 1st level
 #-------------------------------------------------------------------------
@@ -77,6 +78,8 @@
 #                    h: - order of polynomial expansion (0 = none)
 #                    i: - sub-indices of U(i).u for plotting
 #
+#' @param SPM An SPM matrix.
+#' @return An SPM matrix.
 
 spm_fMRI_design <- function(SPM) {
 

@@ -1,20 +1,22 @@
-# returns voxel values from a memory mapped image - a compiled routine
-# FORMAT X = spm_sample_vol(V,x,y,z,hold);
-# V      -  is a memory mapped image volume
-# x      -  matrix of x coordinates {pixels}
-# y      -  matrix of y coordinates {pixels}
-# z      -  matrix of z coordinates {pixels}
-# hold   -  sets the interpolation method for the resampling.
-#           0          Zero-order hold (nearest neighbour).
-#           1          First-order hold (trilinear interpolation).
-#           2->127     Higher order Lagrange (polynomial) interpolation using
-#                      different holds (second-order upwards). 
-#          -127 - -1   Different orders of sinc interpolation. 
-# X      -  output image
+#' @name spm_sample_vol
+#' @title SPM: returns voxel values from a memory mapped image - a compiled routine
+#' @usage X = spm_sample_vol(V,x,y,z,hold);
+#' [X,dX,dY,dZ] = spm_sample_vol(V,x,y,z,hold);
+#' Similar to above, except that the derivatives in the three orthogonal
+#' directions are also returned.
+#' @param V a memory mapped image volume
+#' @param x matrix of x coordinates {pixels}
+#' @param y matrix of y coordinates {pixels}
+#' @param z matrix of z coordinates {pixels}
+#' @param hold sets the interpolation method for the resampling.
+#'           0          Zero-order hold (nearest neighbour).
+#'           1          First-order hold (trilinear interpolation).
+#'           2->127     Higher order Lagrange (polynomial) interpolation using
+#'                      different holds (second-order upwards). 
+#'          -127 - -1   Different orders of sinc interpolation. 
+#' @return output image
 # 
-# OR     [X,dX,dY,dZ] = spm_sample_vol(V,x,y,z,hold);
-# Similar to above, except that the derivatives in the three orthogonal
-# directions are also returned.
+
 
 # Matlab version: Copyright (C) 2008 Wellcome Trust Centre for Neuroimaging
 

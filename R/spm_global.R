@@ -1,14 +1,15 @@
-# returns the global mean for a memory mapped volume image - a compiled routine
-# FORMAT GX = spm_global(V)
-# V   - memory mapped volume
-# GX  - mean global activity
+#' @name spm_global
+#' @title SPM: returns the global mean for a memory mapped volume image - a compiled routine
+#' @usage GX = spm_global(V)
+#' @param V memory mapped volume
+#' @return mean global activity
 #_______________________________________________________________________
 #
-# spm_global returns the mean counts integrated over all the  
-# slices from the volume
-#
-# The mean is estimated after discounting voxels outside the object
-# using a criteria of greater than > (global mean)/8
+#' @description spm_global returns the mean counts integrated over all the  
+#' slices from the volume
+#'
+#' The mean is estimated after discounting voxels outside the object
+#' using a criteria of greater than > (global mean)/8
 
 # in SPM this a compiled routine: spm_global.c
 

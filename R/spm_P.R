@@ -12,7 +12,7 @@
 #' @param n - number of component SPMs in conjunction
 #' @param S - Voxel count
 #
-#' @return A list containing: P     - corrected   P value - P(C >= c | K >= k}, p     - uncorrected P value, 
+#' @return A list containing: P     - corrected   P value - P(C >= c | K >= k), p     - uncorrected P value, 
 #' Ec    - expected total number of clusters and Ek    - expected total number of resels per cluster
 #
 #__________________________________________________________________________

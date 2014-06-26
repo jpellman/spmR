@@ -1,15 +1,16 @@
+#' @name spm_clusters
 #function A = spm_clusters(L)
-# Return the cluster index for a point list
-# FORMAT [A] = spm_clusters(L)
-# L     - locations [x y x]' {in voxels} ([3 x m] matrix)
+#' @title SPM: Return the cluster index for a point list
+#' @usage [A] = spm_clusters(L)
+#' @param L locations [x y x]' {in voxels} ([3 x m] matrix)
 #
-# A     - cluster index or region number ([1 x m] vector)
+#' @return cluster index or region number ([1 x m] vector)
 #__________________________________________________________________________
 #
-# spm_clusters characterizes a point list of voxel values defined with
-# their locations (L) in terms of edge, face and vertex connected
-# subsets, returning a list of indices in A, such that the ith location
-# belongs to cluster A(i) (using an 18 connectivity scheme).
+#' @description spm_clusters characterizes a point list of voxel values defined with
+#' their locations (L) in terms of edge, face and vertex connected
+#' subsets, returning a list of indices in A, such that the ith location
+#' belongs to cluster A(i) (using an 18 connectivity scheme).
 #__________________________________________________________________________
 # MATLAB version: Copyright (C) 2008 Wellcome Trust Centre for Neuroimaging
 

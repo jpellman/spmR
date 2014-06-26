@@ -5,29 +5,30 @@
 # not be identical to the SPM results; moreover, if you find any bugs in the
 # R code, please blame us (http://www.da.ugent.be), not the FIL group
 
-# Removes low frequency confounds X0
-# FORMAT [Y] = spm_filter(K,Y)
-# FORMAT [K] = spm_filter(K)
+#' @name spm_filter
+#' @title SPM: Removes low frequency confounds X0
+#' @usage [Y] = spm_filter(K,Y)
+#' @usage [K] = spm_filter(K)
 #
-# K           - filter matrix or:
-# K(s)        - struct array containing partition-specific specifications
-#
-# K(s).RT     - observation interval in seconds
-# K(s).row    - row of Y constituting block/partition s
-# K(s).HParam - cut-off period in seconds
-#
-# K(s).X0     - low frequencies to be removed (DCT)
+#' @param K filter matrix or:
+#'  K(s)        - struct array containing partition-specific specifications
+#'
+#' K(s).RT     - observation interval in seconds
+#' K(s).row    - row of Y constituting block/partition s
+#' K(s).HParam - cut-off period in seconds
+#'
+#' K(s).X0     - low frequencies to be removed (DCT)
 # 
-# Y           - data matrix
+#' @param Y           - data matrix
 #
-# K           - filter structure
-# Y           - filtered data
+#' @return K filter structure
+#' or Y filtered data
 #____________________________________________________________________
 #
-# spm_filter implements high-pass filtering in an efficient way by
-# using the residual forming matrix of X0 - low frequency confounds
-#.spm_filter also configures the filter structure in accord with the 
-# specification fields if called with one argument
+#' @description spm_filter implements high-pass filtering in an efficient way by
+#' using the residual forming matrix of X0 - low frequency confounds
+#' .spm_filter also configures the filter structure in accord with the 
+#' specification fields if called with one argument
 #____________________________________________________________
 
 

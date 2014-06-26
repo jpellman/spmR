@@ -1,13 +1,14 @@
-# Estimation of smoothness based on [residual] images
-# FORMAT [FWHM,VRpv,R] = spm_est_smoothness(V,VM,[ndf]);
+#' @name spm_est_smoothness
+#' @title SPM: Estimation of smoothness based on [residual] images
+#' @usage [FWHM,VRpv,R] = spm_est_smoothness(V,VM,[ndf]);
 #
-# V     - Filenames or mapped standardized residual images
-# VM    - Filename of mapped mask image
-# ndf   - A 2-vector, [n df], the original n & dof of the linear model
+#' @param V Filenames or mapped standardized residual images
+#' @param VM Filename of mapped mask image
+#' @param ndf A 2-vector, [n df], the original n & dof of the linear model
 #
-# FWHM  - estimated FWHM in all image directions
-# VRpv  - handle of Resels per Voxel image
-# R     - vector of resel counts
+#' @return A list containing: FWHM  - estimated FWHM in all image directions,
+#' VRpv  - handle of Resels per Voxel image,
+#' R     - vector of resel counts
 
 # Matlab version: Copyright (C) 2008 Wellcome Trust Centre for Neuroimaging
 
