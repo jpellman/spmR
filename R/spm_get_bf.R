@@ -1,6 +1,7 @@
-# fills in basis function structure
-# FORMAT [xBF] = spm_get_bf(xBF);
-#
+#' @name spm_get_bf
+#' @title SPM: fills in basis function structure
+#' @usage [xBF] = spm_get_bf(xBF);
+#' @param a basis function structure
 # xBF$dt      - time bin length {seconds}
 # xBF$name    - description of basis functions specified
 # xBF$length  - window length (secs)
@@ -15,8 +16,12 @@
 #       'Gamma functions'
 #       'Finite Impulse Response'};
 #
-# (any other specifiaction will default to hrf)
-
+# (any other specification will default to hrf)
+#' @description spm_get_bf prompts for basis functions to model event or epoch-related
+#' responses.  The basis functions returned are unitary and orthonormal
+#' when defined as a function of peri-stimulus time in time-bins.
+#' It is at this point that the distinction between event and epoch-related 
+#' responses enters.
 
 spm_get_bf <- function(xBF) {
 

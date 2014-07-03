@@ -1,7 +1,8 @@
-# returns a hemodynamic response function
-# FORMAT [hrf,p] = spm_hrf(RT,[p])
-# RT   - scan repeat time
-# p    - parameters of the response function (two gamma functions)
+#' @name spm_hrf
+#' @title SPM: returns a hemodynamic response function
+#' @usage [hrf,p] = spm_hrf(RT,[p])
+#' @param RT scan repeat time
+#' @param p parameters of the response function (two gamma functions)
 #
 #                                                     defaults
 #                                                    (seconds)
@@ -13,8 +14,9 @@
 #   p(6) - onset (seconds)                               0
 #   p(7) - length of kernel (seconds)                   32
 #
-# hrf  - hemodynamic response function
-# p    - parameters of the response function
+#' @return A list containing:
+#' hrf  - hemodynamic response function;
+#' p    - parameters of the response function
 
 
 spm_hrf <- function(RT, P, fMRI_T=16) {

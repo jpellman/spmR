@@ -1,19 +1,22 @@
-# return error covariance constraints (for serially correlated data)
-# FORMAT [C] = spm_Ce(v,a)
-# v  - (1 x l) v(i) = number of observations for i-th block
-# a  - AR coefficient expansion point  (default a = [])
+#' @name spm_Ce
+#' @name SPM: return error covariance constraints (for serially correlated data)
+#' @usage [C] = spm_Ce(v,a)
+#' @param v (1 x l) v(i) = number of observations for i-th block
+#' @param a AR coefficient expansion point  (default a = [])
 # 
-# a  = [] (default) - block diagonal identity matrices specified by v:
+# a  = [] (default) - 
+#' @return block diagonal identity matrices specified by v
 #
-#   C{i}  = blkdiag( zeros(v(1),v(1)),...,AR(0),...,zeros(v(end),v(end)))
-#   AR(0) = eye(v(i),v(i))
+#' @description block diagonal identity matrices specified by v
+#'   C{i}  = blkdiag( zeros(v(1),v(1)),...,AR(0),...,zeros(v(end),v(end)))
+#'   AR(0) = eye(v(i),v(i))
+#'
+#' otherwise:
+#'
+#'   C{i}     = AR(a) - a*dAR(a)/da;
+#'   C{i + 1} = AR(a) + a*dAR(a)/da;
 #
-# otherwise:
-#
-#   C{i}     = AR(a) - a*dAR(a)/da;
-#   C{i + 1} = AR(a) + a*dAR(a)/da;
-#
-# See also: spm_Q.m
+#' @seealso spm_Q
 
 spm_Ce <- function(v, a=numeric(0)) {
 

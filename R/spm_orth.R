@@ -1,11 +1,12 @@
-# recursive Gram-Schmidt orthogonalisation of basis functions
-# FORMAT X = spm_orth(X,OPT)
+#' @name spm_orth
+#' @title SPM: recursive Gram-Schmidt orthogonalisation of basis functions
+#' @usage X = spm_orth(X,OPT)
 #
-# X   - matrix
-# OPT - 'norm' for Euclidean normalisation
-#     - 'pad'  for zero padding of null space [default]
+#' @param X matrix
+#' @param OPT - 'norm' for Euclidean normalisation;
+#'     - 'pad'  for zero padding of null space [default]
 #
-# serial orthogonalisation starting with the first column
+#' @description serial orthogonalisation starting with the first column
 
 
 ## TODO: OPT="pad" not used; no checking!

@@ -1,21 +1,23 @@
-# returns input [designed effects] structures
-# FORMAT [U] = spm_get_ons(SPM,s)
+#' @name spm_get_ons
+#' @title SPM: returns input [designed effects] structures
+#' @usage [U] = spm_get_ons(SPM,s)
 #
-# s  - session number (used by batch system)
+#' @param SPM The SPM object.
+#' @param s session number (used by batch system)
 #
-# U     - (1 x n)   struct array of (n) trial-specific structures
+#' @return U (1 x n)   struct array of (n) trial-specific structures
 #
-#   U(i).name   - cell of names for each input or cause
-#   U(i).u      - inputs or stimulus function matrix
-#   U(i).dt     - time bin (seconds)
-#   U(i).ons    - onsets    (in SPM.xBF.UNITS)
-#   U(i).dur    - durations (in SPM.xBF.UNITS)
-#   U(i).P      - parameter struct.
-#
-#       U(i).P(p).name - parameter name
-#       U(i).P(p).P    - parameter vector
-#       U(i).P(p).h    - order of polynomial expansion
-#       U(i).P(p).i    - sub-indices of u pertaining to P
+#' @description   U(i).name   - cell of names for each input or cause
+#'   U(i).u      - inputs or stimulus function matrix
+#'   U(i).dt     - time bin (seconds)
+#'   U(i).ons    - onsets    (in SPM.xBF.UNITS)
+#'   U(i).dur    - durations (in SPM.xBF.UNITS)
+#'   U(i).P      - parameter struct.
+#'
+#'       U(i).P(p).name - parameter name
+#'       U(i).P(p).P    - parameter vector
+#'       U(i).P(p).h    - order of polynomial expansion
+#'       U(i).P(p).i    - sub-indices of u pertaining to P
 
 spm_get_ons <- function(SPM, s=1) {
 

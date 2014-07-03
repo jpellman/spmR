@@ -1,12 +1,13 @@
-# Sets the defaults which are used by SPM
+#' @name spm_defaults
+#' @title SPM: Sets the defaults which are used by SPM
 #
-# FORMAT spm_defaults
+#' @usage spm_defaults()
 #_______________________________________________________________________
 #
-# This file is intended to be customised for the site.
-# Individual users can make copies which can be stored in their own
-# matlab subdirectories. If ~/matlab is ahead of the SPM directory
-# in the MATLABPATH, then the users own personal defaults are used.
+#' @description This file is intended to be customised for the site.
+#' Individual users can make copies which can be stored in their own
+#' matlab subdirectories. If ~/matlab is ahead of the SPM directory
+#' in the MATLABPATH, then the users own personal defaults are used.
 
 
 # Stats defaults

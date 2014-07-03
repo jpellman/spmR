@@ -1,19 +1,19 @@
-# Creates basis functions for Discrete Cosine Transform.
-# FORMAT C = spm_dctmtx(N,K,n)
-#     OR C = spm_dctmtx(N,K)
-#     OR D = spm_dctmtx(N,K,n,'diff')
-#     OR D = spm_dctmtx(N,K,'diff')
-# N - dimension
-# K - order
-# n - optional points to sample
+#' @name spm_dctmtx
+#' @title SPM: Creates basis functions for Discrete Cosine Transform.
+#' @usage C = spm_dctmtx(N,K,n)
+#' @usage C = spm_dctmtx(N,K)
+#' @usage D = spm_dctmtx(N,K,n,'diff')
+#' @usage D = spm_dctmtx(N,K,'diff')
+#' @param N dimension
+#' @param K order
+#' @param n optional points to sample
 #____________________________________________________________________________
-# spm_dctmtx creates a matrix for the first few basis functions of a one
-# dimensional discrete cosine transform.
-# With the 'diff' argument, spm_dctmtx produces the derivatives of the
-# DCT.
+#' @description spm_dctmtx creates a matrix for the first few basis functions of a one
+#' dimensional discrete cosine transform.
+#' With the 'diff' argument, spm_dctmtx produces the derivatives of the
+#' DCT.
 #
-# See:    Fundamentals of Digital Image Processing (p 150-154).
-#         Anil K. Jain 1989.
+#' @references Fundamentals of Digital Image Processing (p 150-154).  Anil K. Jain 1989.
 
 spm_dctmtx <- function(N, K=N, n.opt=NULL, f.diff=NULL) {
 
