@@ -4862,4 +4862,4 @@ spm_write_vol
 
 
 Command used to obtain this output:
-for func in $(ls *.m); do echo spm_write_vol.m: >> SPM_FUNC_GRAPH; cat spm_write_vol.m | grep -o 'spm_[a-zA-z0-9_]*' | tr '();' ' ' | awk '{print }' | sort | uniq >> SPM_FUNC_GRAPH; echo -e '\n' >> SPM_FUNC_GRAPH; done
+for func in $(ls *.m); do echo ${func}: >> SPM_FUNC_GRAPH; cat ${func} | grep -o 'spm_[a-zA-z0-9_]*' | tr '();' ' ' | awk '{print }' | sort | uniq >> SPM_FUNC_GRAPH; echo -e '\n' >> SPM_FUNC_GRAPH; done
