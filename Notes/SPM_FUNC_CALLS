@@ -1,5 +1,4 @@
 Contents.m:
-spm_LICENCE
 
 
 loadxml.m:
@@ -18,7 +17,6 @@ spm_defaults
 spm_figure
 spm_get_defaults
 spm_help
-spm_help`
 spm_input
 spm_jobman
 spm_motd
@@ -33,13 +31,11 @@ spm_ADEM.m:
 spm_ADEM
 spm_ADEM_diff
 spm_ADEM_set
-spm_DEM
 spm_DEM_R
 spm_DEM_embed
 spm_DEM_eval
 spm_DEM_qU
 spm_DEM_z
-spm_GDEM
 spm_cat
 spm_diag
 spm_dx
@@ -87,11 +83,9 @@ spm_dirichlet_exceedance
 spm_BMS_F.m:
 spm_BMS_F
 spm_BMS_F_smpl
-spm_BMS_smpl_me
 
 
 spm_BMS_F_smpl.m:
-spm_BMS_F
 spm_BMS_F_smpl
 spm_gamrnd
 
@@ -155,7 +149,6 @@ spm_inv
 
 
 spm_DEM_diff.m:
-spm_ADEM_diff
 spm_DEM_diff
 spm_cat
 spm_diff
@@ -236,7 +229,6 @@ spm_DEM_set
 
 
 spm_DEM_z.m:
-spm_DEM_int
 spm_DEM_z
 spm_sqrtm
 
@@ -262,7 +254,6 @@ spm_vec
 
 
 spm_DFP_plot.m:
-spm_DFP
 spm_DFP_plot
 spm_figure
 
@@ -273,20 +264,15 @@ spm_str_manip
 
 
 spm_DesRep.m:
-spm_
 spm_DesMtx
 spm_DesRep
 spm_SpUtil
 spm_fMRI_design_show
 spm_figure
-spm_fmri_spm_ui
 spm_help
 spm_results_ui
 spm_select
-spm_spm
-spm_spm_ui
 spm_str_manip
-spm_ui
 
 
 spm_DisplayTimeSeries.m:
@@ -299,14 +285,12 @@ spm_Dpdf
 
 spm_FcUtil.m:
 spm_FcUtil
-spm_Fcutil
 spm_SpUtil
 spm_sp
 
 
 spm_Fcdf.m:
 spm_Fcdf
-spm_Fpdf
 
 
 spm_Fpdf.m:
@@ -314,8 +298,6 @@ spm_Fpdf
 
 
 spm_GDEM.m:
-spm_ADEM
-spm_DEM
 spm_DEM_R
 spm_DEM_diff
 spm_DEM_embed
@@ -358,7 +340,6 @@ spm_DEM_eval
 spm_DEM_qU
 spm_DEM_set
 spm_LAP
-spm_LAPS
 spm_LAP_eval
 spm_LAP_pg
 spm_LAP_ph
@@ -382,7 +363,6 @@ spm_DEM_eval
 spm_DEM_qU
 spm_DEM_set
 spm_LAPF
-spm_LAPS
 spm_LAP_F
 spm_LAP_eval
 spm_LAP_pg
@@ -407,7 +387,6 @@ spm_DEM_embed
 spm_DEM_eval
 spm_DEM_qU
 spm_DEM_set
-spm_LAP
 spm_LAPS
 spm_LAP_F
 spm_LAP_eval
@@ -430,7 +409,6 @@ spm_vec
 spm_LAP_F.m:
 spm_DEM_R
 spm_DEM_eval
-spm_LAP
 spm_LAP_F
 spm_LAP_eval
 spm_LAP_iS
@@ -472,7 +450,6 @@ spm_reml
 
 
 spm_MH_reml_likelihood.m:
-spm_MH_reml
 spm_MH_reml_likelihood
 spm_logdet
 
@@ -507,7 +484,6 @@ spm_Ncdf
 
 
 spm_Ncdf_jdw.m:
-spm_Ncdf
 spm_Ncdf_jdw
 
 
@@ -567,7 +543,6 @@ spm_P_peakFDR
 
 spm_Pcdf.m:
 spm_Pcdf
-spm_Ppdf
 
 
 spm_Pec_resels.m:
@@ -598,9 +573,7 @@ spm_vol
 
 
 spm_SpUtil.m:
-spm_FcUtil
 spm_SpUtil
-spm_Util
 spm_sp
 
 
@@ -621,7 +594,6 @@ spm_resels
 spm_results_ui
 spm_sample_vol
 spm_select
-spm_spm
 spm_str_manip
 spm_uc
 spm_uc_clusterFDR
@@ -636,23 +608,17 @@ spm_Volt_W
 
 spm_Volterra.m:
 spm_Volterra
-spm_graph
 
 
 spm_XYZreg.m:
 spm_XYZreg
-spm_XYZreg_Ex1
-spm_XYZreg_Ex2
 spm_figure
 spm_graph
-spm_mip_ui
-spm_results_ui
 
 
 spm_XYZreg_Ex2.m:
 spm_XYZreg
 spm_XYZreg_Ex2
-spm_res_ui
 
 
 spm_Xcdf.m:
@@ -667,60 +633,45 @@ spm_Xpdf
 
 spm_add.m:
 spm_add
-spm_map
-spm_mean_ui
-spm_vol
-spm_write_plane
 
 
 spm_add2.m:
-spm_add
 spm_add2
 spm_matrix
 spm_slice_vol
-spm_vol
 spm_write_vol
 
 
 spm_adjmean_fmri_ui.m:
 spm_DesMtx
-spm_RandFX
 spm_add
 spm_adjmean_fmri
 spm_adjmean_fmri_ui
-spm_adjmean_ui
 spm_check_orientations
 spm_check_version
 spm_clf
 spm_create_vol
-spm_desMtx
-spm_detrend
 spm_global
 spm_help
 spm_hrf
 spm_input
-spm_mean
 spm_platform
 spm_print
 spm_select
 spm_sptop
 spm_str_manip
-spm_type
 spm_vol
 
 
 spm_adjmean_ui.m:
 spm_DesMtx
-spm_RandFX
 spm_add
 spm_adjmean
-spm_adjmean_fmri_ui
 spm_adjmean_ui
 spm_check_orientations
 spm_check_version
 spm_clf
 spm_create_vol
-spm_desMtx
 spm_global
 spm_help
 spm_input
@@ -729,14 +680,12 @@ spm_platform
 spm_print
 spm_select
 spm_str_manip
-spm_type
 spm_vol
 
 
 spm_affine_priors.m:
 spm_affine_priors
 spm_affreg
-spm_select
 
 
 spm_affreg.m:
@@ -769,7 +718,6 @@ spm_logdet
 
 spm_argmax.m:
 spm_argmax
-spm_argmin
 spm_cat
 spm_diff
 spm_dx
@@ -835,9 +783,7 @@ spm_vol
 
 
 spm_bias_mex.m:
-spm_bias_estimate
 spm_bias_mex
-spm_vol
 
 
 spm_bias_ui.m:
@@ -924,7 +870,6 @@ spm_vol
 
 spm_bms_partition.m:
 spm_bms_partition
-spm_imcalc
 spm_input
 spm_matrix
 spm_platform
@@ -936,18 +881,13 @@ spm_write_vol
 
 spm_brainwarp.m:
 spm_brainwarp
-spm_vol
-spm_write_sn
 
 
 spm_bsplinc.m:
 spm_bsplinc
-spm_bsplins
-spm_vol
 
 
 spm_bsplins.m:
-spm_bsplinc
 spm_bsplins
 
 
@@ -985,7 +925,6 @@ spm_rmpath
 
 spm_check_orientations.m:
 spm_check_orientations
-spm_vol
 
 
 spm_check_registration.m:
@@ -1048,14 +987,10 @@ spm_SpUtil
 spm_check_version
 spm_con
 spm_conman
-spm_contrasts
 spm_figure
-spm_getSPM
 spm_get_defaults
 spm_help
-spm_input
 spm_platform
-spm_spm
 
 
 spm_contrasts.m:
@@ -1082,11 +1017,7 @@ spm_conv
 
 
 spm_conv_vol.m:
-spm_conv
 spm_conv_vol
-spm_smooth
-spm_vol
-spm_write_plane
 
 
 spm_convmtx.m:
@@ -1119,7 +1050,6 @@ spm_create_vol.m:
 spm_create_vol
 spm_platform
 spm_type
-spm_vol
 
 
 spm_cva.m:
@@ -1140,18 +1070,15 @@ spm_cva_results.m:
 spm_cva_results
 spm_figure
 spm_mip
-spm_results_ui
 spm_select
 
 
 spm_dartel_integrate.m:
-spm_dartel_exp
 spm_dartel_integrate
 
 
 spm_data_id.m:
 spm_data_id
-spm_vec
 
 
 spm_dcm_KL.m:
@@ -1175,7 +1102,6 @@ spm_dcm_average.m:
 spm_Ncdf
 spm_check_version
 spm_dcm_average
-spm_dcm_sessions
 spm_input
 spm_select
 spm_unvec
@@ -1246,7 +1172,6 @@ spm_dcm_display.m:
 spm_dcm_display
 spm_figure
 spm_matrix
-spm_regions
 spm_sample_vol
 spm_vol
 
@@ -1290,7 +1215,6 @@ spm_vec
 spm_dcm_generate.m:
 spm_Ce
 spm_check_version
-spm_dcm_create
 spm_dcm_fmri_priors
 spm_dcm_generate
 spm_figure
@@ -1304,8 +1228,6 @@ spm_dcm_graph.m:
 spm_dcm_graph
 spm_detrend
 spm_eeg_displayECD
-spm_regions
-spm_svd
 
 
 spm_dcm_optimise.m:
@@ -1320,7 +1242,6 @@ spm_check_version
 spm_dcm_evidence
 spm_dcm_graph
 spm_dcm_post_hoc
-spm_dcm_search
 spm_fieldindices
 spm_figure
 spm_inv
@@ -1343,7 +1264,6 @@ spm_dcm_graph
 spm_dcm_review
 spm_figure
 spm_input
-spm_nlsi
 spm_select
 spm_unvec
 spm_vec
@@ -1386,7 +1306,6 @@ spm_dcm_specify.m:
 spm_Ce
 spm_check_version
 spm_dcm_specify
-spm_dcm_ui
 spm_figure
 spm_input
 spm_select
@@ -1407,7 +1326,6 @@ spm_dcm_ui
 spm_figure
 spm_input
 spm_jobman
-spm_nlsi
 spm_select
 
 
@@ -1424,14 +1342,12 @@ spm_dctmtx
 spm_defaults.m:
 spm_defaults
 spm_defauts
-spm_flip_analyze_images
 spm_get_defaults
 
 
 spm_defs.m:
 spm_bsplinc
 spm_bsplins
-spm_config_defs
 spm_create_vol
 spm_dartel_integrate
 spm_dctmtx
@@ -1439,7 +1355,6 @@ spm_defs
 spm_fileparts
 spm_get_bbox
 spm_invdef
-spm_jobman
 spm_load_float
 spm_matrix
 spm_sample_vol
@@ -1454,7 +1369,6 @@ spm_make_contrasts
 
 spm_design_factorial.m:
 spm_DesMtx
-spm_cfg_factorial_design
 spm_design_factorial
 
 
@@ -1481,7 +1395,6 @@ spm_diag
 
 spm_dicom_convert.m:
 spm_dicom_convert
-spm_dicom_headers
 spm_platform
 spm_progress_bar
 spm_type
@@ -1515,7 +1428,6 @@ spm_digamma
 spm_dilate.m:
 spm_dilate
 spm_dilate_erode
-spm_erode
 
 
 spm_dirichlet.m:
@@ -1529,7 +1441,6 @@ spm_gamrnd
 
 
 spm_dwtmtx.m:
-spm_dctmtx
 spm_dwtmtx
 
 
@@ -1543,7 +1454,6 @@ spm_vec
 
 
 spm_dx_eig.m:
-spm_dx
 spm_dx_eig
 spm_unvec
 spm_vec
@@ -1558,9 +1468,6 @@ spm_eeg_artefact.m:
 spm_eeg_artefact
 spm_eeg_artefact5
 spm_eeg_artefact_
-spm_eeg_artefact_flat
-spm_eeg_artefact_jump
-spm_eeg_artefact_peak2peak
 spm_eeg_copy
 spm_eeg_load
 spm_select
@@ -1577,40 +1484,30 @@ spm_select
 
 
 spm_eeg_artefact_flat.m:
-spm_cfg_eeg_artefact
-spm_eeg_artefact
 spm_eeg_artefact_flat
 spm_eeg_load
 spm_progress_bar
 
 
 spm_eeg_artefact_jump.m:
-spm_cfg_eeg_artefact
-spm_eeg_artefact
 spm_eeg_artefact_jump
 spm_eeg_load
 spm_progress_bar
 
 
 spm_eeg_artefact_nans.m:
-spm_cfg_eeg_artefact
-spm_eeg_artefact
 spm_eeg_artefact_nans
 spm_eeg_load
 spm_progress_bar
 
 
 spm_eeg_artefact_peak2peak.m:
-spm_cfg_eeg_artefact
-spm_eeg_artefact
 spm_eeg_artefact_peak2peak
 spm_eeg_load
 spm_progress_bar
 
 
 spm_eeg_artefact_threshchan.m:
-spm_cfg_eeg_artefact
-spm_eeg_artefact
 spm_eeg_artefact_threshchan
 spm_eeg_load
 spm_progress_bar
@@ -1631,7 +1528,6 @@ spm_select
 
 spm_eeg_average5.m:
 spm_eeg_average
-spm_eeg_average5
 spm_eeg_average_TF
 spm_eeg_load
 spm_eeg_review
@@ -1742,7 +1638,6 @@ spm_input
 
 
 spm_eeg_displayECD.m:
-spm_eeg_displayDipoles
 spm_eeg_displayECD
 spm_eeg_render
 spm_figure
@@ -2092,10 +1987,8 @@ spm_eeg_inv_transform_points
 
 spm_eeg_inv_vbecd.m:
 spm_eeg_inv_vbecd
-spm_eeg_inv_vbecd_gui
 spm_eeg_wrap_dipfit_vbecd
 spm_nlsi_GN
-spm_nlsi_gn
 
 
 spm_eeg_inv_vbecd_disp.m:
@@ -2115,7 +2008,6 @@ spm_eeg_inv_vbecd_getLF
 spm_eeg_inv_vbecd_gui.m:
 spm_clf
 spm_eeg_displayECD
-spm_eeg_displayECD_ctf
 spm_eeg_inv_vbecd
 spm_eeg_inv_vbecd_gui
 spm_eeg_load
@@ -2144,7 +2036,6 @@ spm_eeg_invert.m:
 spm_cat
 spm_data_id
 spm_dctmtx
-spm_eeg_inv_fmripriors
 spm_eeg_invert
 spm_eeg_invert_display
 spm_eeg_lgainmat
@@ -2184,7 +2075,6 @@ spm_svd
 
 spm_eeg_layout3D.m:
 spm_eeg_layout3D
-spm_eeg_project3D
 spm_match_str
 
 
@@ -2217,7 +2107,6 @@ spm_write_vol
 
 
 spm_eeg_mask2channels.m:
-spm_eeg_firstlevel
 spm_eeg_load
 spm_eeg_locate_channels
 spm_eeg_mask2channels
@@ -2250,7 +2139,6 @@ spm_eeg_load
 spm_eeg_montage
 spm_eeg_montage_ui
 spm_eeg_prep
-spm_eeg_prep_ui
 spm_input
 spm_match_str
 spm_progress_bar
@@ -2265,7 +2153,6 @@ spm_uitable
 
 spm_eeg_morlet.m:
 spm_eeg_morlet
-spm_eeg_tf
 
 
 spm_eeg_plotScalpData.m:
@@ -2286,7 +2173,6 @@ spm_match_str
 spm_eeg_prep_ui.m:
 spm_clf
 spm_eeg_load
-spm_eeg_montage_ui
 spm_eeg_prep
 spm_eeg_prep_ui
 spm_eeg_project3D
@@ -2315,7 +2201,6 @@ spm_eeg_render
 
 spm_eeg_review.m:
 spm_clf
-spm_eeg_inv_imag_api
 spm_eeg_load
 spm_eeg_review
 spm_eeg_review_callbacks
@@ -2371,30 +2256,22 @@ spm_select
 
 
 spm_eeg_specest_ft_mtmconvol.m:
-spm_cfg_eeg_tf
 spm_eeg_specest_ft_mtmconvol
-spm_eeg_tf
 spm_squeeze
 
 
 spm_eeg_specest_hilbert.m:
-spm_cfg_eeg_tf
 spm_eeg_specest_hilbert
-spm_eeg_tf
 spm_hilbert
 
 
 spm_eeg_specest_morlet.m:
-spm_cfg_eeg_tf
 spm_eeg_morlet
 spm_eeg_specest_morlet
-spm_eeg_tf
 
 
 spm_eeg_specest_mtmspec.m:
-spm_cfg_eeg_tf
 spm_eeg_specest_mtmspec
-spm_eeg_tf
 spm_mmtspec
 
 
@@ -2402,9 +2279,6 @@ spm_eeg_tf.m:
 spm_eeg_compatibility
 spm_eeg_load
 spm_eeg_specest_
-spm_eeg_specest_ft_mtmconvol
-spm_eeg_specest_hilbert
-spm_eeg_specest_morlet
 spm_eeg_tf
 spm_progress_bar
 spm_select
@@ -2414,7 +2288,6 @@ spm_eeg_tf5.m:
 spm_eeg_load
 spm_eeg_morlet
 spm_eeg_tf
-spm_eeg_tf5
 spm_input
 spm_progress_bar
 spm_select
@@ -2442,9 +2315,7 @@ spm_eeg_weight_epochs_TF
 
 
 spm_eeg_wrap_dipfit_vbecd.m:
-spm__eeg_inv_vbecd
 spm_eeg_wrap_dipfit_vbecd
-spm_nlsi_gn
 
 
 spm_eeval.m:
@@ -2466,7 +2337,6 @@ spm_en
 
 
 spm_erode.m:
-spm_dilate
 spm_dilate_erode
 spm_erode
 
@@ -2504,14 +2374,11 @@ spm_fMRI_design
 spm_get_bf
 spm_get_defaults
 spm_get_ons
-spm_graph
 spm_input
 spm_orth
 
 
 spm_fMRI_design_show.m:
-spm_DesRep
-spm_fMRI_design
 spm_fMRI_design_show
 spm_figure
 spm_results_ui
@@ -2528,20 +2395,16 @@ spm_figure.m:
 spm_about
 spm_authors
 spm_check_installation
-spm_clf
 spm_figure
 spm_get_defaults
 spm_help
-spm_jobman
 spm_platform
 spm_print
 spm_update
 
 
 spm_file.m:
-spm_existfile
 spm_file
-spm_file_ext
 spm_fileparts
 spm_select
 
@@ -2575,7 +2438,6 @@ spm_filter
 
 
 spm_flip_analyze_images.m:
-spm_defaults
 spm_flip_analyze_images
 
 
@@ -2594,19 +2456,14 @@ spm_DesRep
 spm_check_orientations
 spm_check_version
 spm_clf
-spm_dcm_ui
 spm_fMRI_design
 spm_fMRI_design_show
 spm_filter
-spm_fmri_spm
 spm_fmri_spm_ui
 spm_get_defaults
 spm_global
-spm_hdm_ui
 spm_input
 spm_select
-spm_spm
-spm_spm_ui
 spm_vol
 
 
@@ -2639,15 +2496,12 @@ spm_cat
 spm_diff
 spm_fp_fmin
 spm_fp_fun
-spm_ndgrid
 spm_nlsi_GN
-spm_nlsi_NG
 
 
 spm_fp_fun.m:
 spm_diff
 spm_fp_fun
-spm_vec
 
 
 spm_funfun.m:
@@ -2663,7 +2517,6 @@ spm_fx_fmri
 
 
 spm_fx_fmri_dcm.m:
-spm_fx_dcm
 spm_fx_fmri_dcm
 
 
@@ -2692,7 +2545,6 @@ spm_getSPM.m:
 spm_FcUtil
 spm_Fcdf
 spm_Ncdf
-spm_RandFX
 spm_Tcdf
 spm_Xcdf
 spm_clusters
@@ -2704,9 +2556,7 @@ spm_get_data
 spm_get_defaults
 spm_help
 spm_input
-spm_results_ui
 spm_select
-spm_sp
 spm_spm
 spm_str_manip
 spm_u
@@ -2720,7 +2570,6 @@ spm_vol
 spm_get_bbox.m:
 spm_get_bbox
 spm_imatrix
-spm_orthviews
 spm_read_vols
 spm_select
 spm_vol
@@ -2754,12 +2603,10 @@ spm_get_defaults
 
 
 spm_get_image_def.m:
-spm_FindFields
 spm_dctmtx
 spm_get_def
 spm_get_image_def
 spm_imatrix
-spm_sample_vol
 spm_vol
 
 
@@ -2768,8 +2615,6 @@ spm_get_lm
 
 
 spm_get_ons.m:
-spm_defaults
-spm_fMRI_design
 spm_get_ons
 spm_input
 spm_orth
@@ -2788,7 +2633,6 @@ spm_get_space
 
 spm_get_vc.m:
 spm_get_vc
-spm_non_sphericity
 
 
 spm_get_volumes.m:
@@ -2809,7 +2653,6 @@ spm_cat
 spm_diff
 spm_dx
 spm_figure
-spm_fmin
 spm_gn_fmin
 spm_sqrtm
 spm_unvec
@@ -2823,7 +2666,6 @@ spm_XYZreg
 spm_check_filename
 spm_figure
 spm_filter
-spm_getSPM
 spm_get_bf
 spm_get_data
 spm_graph
@@ -2841,25 +2683,18 @@ spm_grid
 
 
 spm_gx_dcm.m:
-spm_fx_dcm
 spm_gx_dcm
-spm_nlsi
 
 
 spm_gx_fmri.m:
-spm_fx_dcm
 spm_gx_fmri
-spm_nlsi
 
 
 spm_gx_fmri_linear.m:
-spm_fx_dcm
 spm_gx_fmri_linear
-spm_nlsi
 
 
 spm_gx_hdm.m:
-spm_fx_dcm
 spm_gx_hdm
 
 
@@ -2886,7 +2721,6 @@ spm_input
 spm_kernels
 spm_nlsi
 spm_regions
-spm_results_ui
 
 
 spm_help.m:
@@ -2899,11 +2733,9 @@ spm_figure
 spm_format
 spm_get
 spm_help
-spm_help`
 spm_jobman
 spm_motd
 spm_platform
-spm_routine
 spm_templates
 
 
@@ -2916,7 +2748,6 @@ spm_hist
 
 
 spm_hist2.m:
-spm_coreg
 spm_hist2
 
 
@@ -2950,13 +2781,10 @@ spm_matrix
 
 spm_imcalc.m:
 spm_imcalc
-spm_imcalc_ui
 spm_matrix
 spm_progress_bar
 spm_slice_vol
 spm_type
-spm_vol
-spm_write_plane
 spm_write_vol
 
 
@@ -2967,10 +2795,8 @@ spm_imcalc_ui
 spm_input
 spm_platform
 spm_select
-spm_slice_vol
 spm_type
 spm_vol
-spm_write_plane
 
 
 spm_input.m:
@@ -2980,132 +2806,66 @@ spm_help
 spm_input
 spm_load
 spm_select
-spm_sp
 
 
 spm_int.m:
 spm_bireduce
-spm_diff
-spm_dx
 spm_expm
 spm_int
-spm_int_B
-spm_int_D
-spm_int_E
-spm_int_J
-spm_int_L
-spm_int_U
-spm_int_ode
 spm_unvec
 spm_vec
 
 
 spm_int_B.m:
-spm_bireduce
 spm_diff
 spm_dx
-spm_int
 spm_int_B
-spm_int_E
-spm_int_J
-spm_int_L
-spm_int_U
-spm_int_ode
 spm_unvec
 spm_vec
 
 
 spm_int_D.m:
-spm_diff
-spm_dx
 spm_expm
-spm_int
-spm_int_B
 spm_int_D
-spm_int_E
-spm_int_J
-spm_int_L
-spm_int_U
-spm_int_ode
 spm_soreduce
 spm_unvec
 spm_vec
 
 
 spm_int_E.m:
-spm_bireduce
 spm_diff
-spm_dx
-spm_int
-spm_int_B
 spm_int_E
-spm_int_J
-spm_int_L
-spm_int_U
-spm_int_ode
 spm_unvec
 spm_vec
 
 
 spm_int_J.m:
-spm_bireduce
 spm_diff
 spm_dx
-spm_int
-spm_int_B
-spm_int_E
 spm_int_J
-spm_int_L
-spm_int_U
-spm_int_ode
 spm_unvec
 spm_vec
 
 
 spm_int_L.m:
-spm_bireduce
 spm_cat
 spm_diff
-spm_dx
 spm_expm
-spm_int
-spm_int_B
-spm_int_E
-spm_int_J
 spm_int_L
-spm_int_U
-spm_int_ode
 spm_inv
 spm_unvec
 spm_vec
 
 
 spm_int_ode.m:
-spm_bireduce
 spm_conv
-spm_diff
-spm_dx
-spm_int
-spm_int_B
-spm_int_E
-spm_int_J
-spm_int_U
 spm_int_ode
 spm_unvec
 spm_vec
 
 
 spm_int_sde.m:
-spm_bireduce
 spm_diff
-spm_dx
-spm_int
-spm_int_B
-spm_int_E
-spm_int_J
-spm_int_L
-spm_int_U
-spm_int_ode
 spm_int_sde
 spm_sde_dx
 spm_sqrtm
@@ -3127,10 +2887,8 @@ spm_invBcdf
 
 
 spm_invFcdf.m:
-spm_Fcdf
 spm_invBcdf
 spm_invFcdf
-spm_invFpdf
 
 
 spm_invGcdf.m:
@@ -3189,7 +2947,6 @@ spm_select
 spm_kernel.m:
 spm_bireduce
 spm_kernel
-spm_kernels
 
 
 spm_kernels.m:
@@ -3240,7 +2997,6 @@ spm_P_peakFDR
 spm_XYZreg
 spm_clusters
 spm_figure
-spm_getSPM
 spm_get_data
 spm_get_defaults
 spm_invNcdf
@@ -3260,11 +3016,9 @@ spm_load_float.m:
 spm_load_float
 spm_matrix
 spm_slice_vol
-spm_vol
 
 
 spm_load_priors.m:
-spm_bsplinc
 spm_load_priors
 spm_matrix
 spm_progress_bar
@@ -3273,7 +3027,6 @@ spm_vol
 
 
 spm_log_evidence.m:
-spm_argmax
 spm_inv
 spm_log_evidence
 spm_logdet
@@ -3298,7 +3051,6 @@ spm_speye
 spm_maff.m:
 spm_affine_priors
 spm_hist
-spm_load_priors
 spm_maff
 spm_minmax
 spm_plot_convergence
@@ -3332,7 +3084,6 @@ spm_match_str
 
 spm_matlab_version_chk.m:
 spm_check_version
-spm_matlab_version_check
 spm_matlab_version_chk
 
 
@@ -3342,7 +3093,6 @@ spm_matrix
 
 spm_max.m:
 spm_bwlabel
-spm_clusters
 spm_get_lm
 spm_max
 
@@ -3373,7 +3123,6 @@ spm_mesh_area
 spm_mesh_clusters.m:
 spm_mesh_clusters
 spm_mesh_label
-spm_mesh_neighbours
 spm_mesh_split
 
 
@@ -3427,7 +3176,6 @@ spm_mesh_normals
 spm_mesh_project.m:
 spm_mesh_project
 spm_read_vols
-spm_render
 spm_sample_vol
 spm_vol
 
@@ -3465,7 +3213,6 @@ spm_mesh_split
 spm_mesh_to_grid.m:
 spm_mesh_adjacency
 spm_mesh_to_grid
-spm_vol
 
 
 spm_mesh_transform.m:
@@ -3489,7 +3236,6 @@ spm_sp
 
 
 spm_minmax.m:
-spm_figure
 spm_hist
 spm_minmax
 spm_progress_bar
@@ -3498,7 +3244,6 @@ spm_progress_bar
 spm_mip.m:
 spm_get_defaults
 spm_mip
-spm_mip_ui
 spm_project
 
 
@@ -3514,13 +3259,10 @@ spm_max
 spm_mip
 spm_mip_ui
 spm_platform
-spm_project
 
 
 spm_mldivide.m:
-spm_inv
 spm_mldivide
-spm_mrdivide
 
 
 spm_mnc2nifti.m:
@@ -3531,7 +3273,6 @@ spm_type
 
 
 spm_mrdivide.m:
-spm_inv
 spm_mldivide
 spm_mrdivide
 
@@ -3541,18 +3282,15 @@ spm_multrnd
 
 
 spm_mvNpdf.m:
-spm_Npdf
 spm_mvNpdf
 
 
 spm_mvb.m:
 spm_mvb
 spm_mvb_G
-spm_mvb_ui
 
 
 spm_mvb_G.m:
-spm_mvb
 spm_mvb_G
 spm_reml_sc
 spm_svd
@@ -3595,8 +3333,6 @@ spm_ancova
 spm_clf
 spm_figure
 spm_input
-spm_mvb
-spm_mvb_cvk
 spm_mvb_cvk2
 spm_mvb_cvk_display
 spm_select
@@ -3628,7 +3364,6 @@ spm_mvb
 spm_mvb_U
 spm_mvb_display
 spm_mvb_estimate
-spm_mvb_p
 
 
 spm_mvb_p.m:
@@ -3652,7 +3387,6 @@ spm_input
 spm_mvb
 spm_mvb_U
 spm_mvb_display
-spm_mvb_p
 spm_mvb_ui
 spm_results_ui
 
@@ -3728,10 +3462,7 @@ spm_vec
 
 
 spm_non_sphericity.m:
-spm_Ce
 spm_non_sphericity
-spm_spm
-spm_spm_ui
 
 
 spm_normalise.m:
@@ -3739,7 +3470,6 @@ spm_affreg
 spm_brainwarp
 spm_check_version
 spm_dctmtx
-spm_defaults
 spm_fileparts
 spm_get_defaults
 spm_global
@@ -3757,7 +3487,6 @@ spm_normalise_disp
 spm_orthviews
 spm_print
 spm_select
-spm_str_manip
 spm_write_sn
 
 
@@ -3766,7 +3495,6 @@ spm_normrnd
 
 
 spm_orientations.m:
-spm_defaults
 spm_flip_analyze_images
 spm_get_space
 spm_orientations
@@ -3790,13 +3518,11 @@ spm_figure
 spm_fileparts
 spm_getSPM
 spm_get_bbox
-spm_image
 spm_imatrix
 spm_input
 spm_matrix
 spm_orthviews
 spm_ov_
-spm_ov_PLUGINNAME
 spm_sample_vol
 spm_select
 spm_slice_vol
@@ -3814,15 +3540,12 @@ spm_figure
 spm_hrf
 spm_input
 spm_peb_ppi
-spm_regions
 spm_select
 spm_str_manip
 
 
 spm_percentile.m:
 spm_percentile
-spm_percentile_nist
-spm_summarise
 
 
 spm_perm_mtx.m:
@@ -3848,8 +3571,6 @@ spm_phi
 
 
 spm_phi_dot.m:
-spm_inv_phi
-spm_phi
 spm_phi_dot
 
 
@@ -3885,10 +3606,8 @@ spm_fileparts
 spm_invdef
 spm_krutil
 spm_prep2sn
-spm_preproc
 spm_progress_bar
 spm_sample_vol
-spm_write_sn
 
 
 spm_preproc.m:
@@ -3913,7 +3632,6 @@ spm_dctmtx
 spm_get_defaults
 spm_load_priors
 spm_platform
-spm_prep2sn
 spm_preproc_write
 spm_progress_bar
 spm_sample_priors
@@ -3938,8 +3656,6 @@ spm_progress_bar
 
 
 spm_project.m:
-spm_mip
-spm_mip_ui
 spm_project
 
 
@@ -3958,7 +3674,6 @@ spm_matrix
 spm_read_vols
 spm_slice_vol
 spm_type
-spm_vol
 
 
 spm_realign.m:
@@ -3989,9 +3704,7 @@ spm_check_version
 spm_dcm_display
 spm_figure
 spm_filter
-spm_getSPM
 spm_get_data
-spm_graph
 spm_input
 spm_regions
 spm_results_ui
@@ -4003,8 +3716,6 @@ spm_dx
 spm_inv
 spm_logdet
 spm_reml
-spm_reml_sc
-spm_sp_reml
 spm_svd
 
 
@@ -4012,10 +3723,7 @@ spm_reml_A.m:
 spm_dx
 spm_inv
 spm_logdet
-spm_reml
 spm_reml_A
-spm_reml_sc
-spm_sp_reml
 spm_svd
 
 
@@ -4023,7 +3731,6 @@ spm_reml_ancova.m:
 spm_FcUtil
 spm_PEB
 spm_SpUtil
-spm_ancova
 spm_reml_ancova
 spm_sp
 
@@ -4032,9 +3739,7 @@ spm_reml_sc.m:
 spm_dx
 spm_inv
 spm_logdet
-spm_reml
 spm_reml_sc
-spm_sp_reml
 spm_svd
 
 
@@ -4051,7 +3756,6 @@ spm_render
 spm_results_ui
 spm_select
 spm_slice_vol
-spm_surf
 
 
 spm_render_vol.m:
@@ -4086,13 +3790,11 @@ spm_write_vol
 
 spm_resss.m:
 spm_check_orientations
-spm_create_vol
 spm_matrix
 spm_resss
 spm_slice_vol
 spm_str_manip
 spm_type
-spm_vol
 spm_write_plane
 
 
@@ -4121,7 +3823,6 @@ spm_regions
 spm_render
 spm_results_ui
 spm_sections
-spm_spm
 spm_str_manip
 spm_transverse
 spm_write_filtered
@@ -4134,7 +3835,6 @@ spm_rmpath
 spm_robust_average.m:
 spm_cond_units
 spm_robust_average
-spm_robust_averaget
 
 
 spm_robust_glm.m:
@@ -4144,13 +3844,11 @@ spm_robust_glm
 
 spm_sample_priors.m:
 spm_bsplins
-spm_load_priors
 spm_sample_priors
 
 
 spm_sample_vol.m:
 spm_sample_vol
-spm_slice_vol
 
 
 spm_sde_dx.m:
@@ -4206,7 +3904,6 @@ spm_write_plane
 
 
 spm_slice_vol.m:
-spm_sample_vol
 spm_slice_vol
 
 
@@ -4227,7 +3924,6 @@ spm_smoothkern
 
 
 spm_smoothto8bit.m:
-spm_
 spm_matrix
 spm_platform
 spm_slice_vol
@@ -4249,7 +3945,6 @@ spm_vec
 
 spm_sp.m:
 spm_sp
-spm_spc
 
 
 spm_sp_reml.m:
@@ -4258,8 +3953,6 @@ spm_diag
 spm_dx
 spm_en
 spm_logdet
-spm_reml
-spm_reml_sc
 spm_sp_reml
 spm_svd
 
@@ -4271,12 +3964,10 @@ spm_speye
 spm_spm.m:
 spm_DesMtx
 spm_FcUtil
-spm_RandFX
 spm_SpUtil
 spm_check_orientations
 spm_check_version
 spm_create_vol
-spm_defaults
 spm_est_smoothness
 spm_existfile
 spm_filter
@@ -4292,12 +3983,9 @@ spm_reml
 spm_select
 spm_sp
 spm_spm
-spm_spm_Bayes
-spm_spm_ui
 spm_sqrtm
 spm_type
 spm_unlink
-spm_vol
 spm_write_plane
 spm_write_vol
 
@@ -4306,16 +3994,13 @@ spm_spm_Bayes.m:
 spm_PEB
 spm_check_version
 spm_create_vol
-spm_getSPM
 spm_get_data
 spm_get_defaults
 spm_platform
 spm_progress_bar
 spm_reml
 spm_select
-spm_spm
 spm_spm_Bayes
-spm_spm_vb
 spm_str_manip
 spm_type
 spm_unlink
@@ -4325,7 +4010,6 @@ spm_write_plane
 spm_spm_ui.m:
 spm_DesMtx
 spm_DesRep
-spm_RandFX
 spm_adjmean_ui
 spm_check_orientations
 spm_check_version
@@ -4335,10 +4019,7 @@ spm_help
 spm_input
 spm_meanby
 spm_non_sphericity
-spm_reml
 spm_select
-spm_spm
-spm_spm_fmri_ui
 spm_spm_ui
 spm_type
 spm_vol
@@ -4349,7 +4030,6 @@ spm_DesMtx
 spm_FcUtil
 spm_bwlabel
 spm_check_version
-spm_contrasts
 spm_create_vol
 spm_filter
 spm_getSPM
@@ -4396,7 +4076,6 @@ spm_squeeze
 spm_standalone.m:
 spm_get_defaults
 spm_jobman
-spm_make_standalone
 spm_standalone
 
 
@@ -4409,7 +4088,6 @@ spm_summarise.m:
 spm_ROI
 spm_check_orientations
 spm_get_data
-spm_regions
 spm_select
 spm_summarise
 spm_vol
@@ -4423,7 +4101,6 @@ spm_figure
 spm_input
 spm_matrix
 spm_print
-spm_render
 spm_render_vol
 spm_results_ui
 spm_sample_vol
@@ -4451,7 +4128,6 @@ spm_t2z
 spm_transverse.m:
 spm_XYZreg
 spm_figure
-spm_getSPM
 spm_grid
 spm_matrix
 spm_results_ui
@@ -4481,7 +4157,6 @@ spm_uc_RF
 
 spm_uc_Bonf.m:
 spm_u
-spm_uc
 spm_uc_Bonf
 
 
@@ -4501,7 +4176,6 @@ spm_uc_FDR
 spm_uc_RF.m:
 spm_P_RF
 spm_u
-spm_uc
 spm_uc_RF
 
 
@@ -4529,10 +4203,7 @@ spm_uitable
 
 
 spm_uncat.m:
-spm_cat
 spm_uncat
-spm_unvec
-spm_vec
 
 
 spm_unlink.m:
@@ -4559,14 +4230,11 @@ spm_fileparts
 spm_get_def
 spm_get_defaults
 spm_get_image_def
-spm_imatrix
 spm_platform
 spm_progress_bar
 spm_select
 spm_type
 spm_uw_apply
-spm_uw_estimate
-spm_vol
 spm_write_plane
 spm_write_vol
 
@@ -4575,7 +4243,6 @@ spm_uw_estimate.m:
 spm_bsplinc
 spm_bsplins
 spm_dctmtx
-spm_defaults
 spm_erode
 spm_get_def
 spm_get_defaults
@@ -4584,7 +4251,6 @@ spm_global
 spm_imatrix
 spm_krutil
 spm_matrix
-spm_orthviews
 spm_platform
 spm_print
 spm_select
@@ -4593,11 +4259,9 @@ spm_unlink
 spm_uw_estimate
 spm_uw_show
 spm_vol
-spm_write_vol
 
 
 spm_uw_show.m:
-spm_FindFields
 spm_check_registration
 spm_figure
 spm_orthviews
@@ -4651,7 +4315,6 @@ spm_write_vol
 spm_vb_edgeweights.m:
 spm_vb_edgeweights
 spm_vb_incidence
-spm_vb_neighbors
 
 
 spm_vb_gamma.m:
@@ -4679,7 +4342,6 @@ spm_vb_gamma
 spm_vb_glmar
 spm_vb_init_block
 spm_vb_lambda
-spm_vb_set_priors
 spm_vb_w
 
 
@@ -4728,7 +4390,6 @@ spm_vol
 
 spm_vb_robust.m:
 spm_rglm
-spm_vb_glmar
 spm_vb_robust
 
 
@@ -4800,7 +4461,6 @@ spm_vol.m:
 spm_existfile
 spm_fileparts
 spm_str_manip
-spm_type
 spm_vol
 spm_vol_nifti
 
@@ -4819,7 +4479,6 @@ spm_wft
 
 
 spm_write_filtered.m:
-spm_getSPM
 spm_input
 spm_matrix
 spm_platform
@@ -4831,7 +4490,6 @@ spm_write_vol
 
 
 spm_write_plane.m:
-spm_vol
 spm_write_plane
 
 
@@ -4855,11 +4513,8 @@ spm_write_vol
 
 spm_write_vol.m:
 spm_create_vol
-spm_vol
 spm_write_plane
 spm_write_vol
 
-
-
-Command used to obtain this output:
-for func in $(ls *.m); do echo spm_write_vol.m: >> SPM_FUNC_GRAPH; cat spm_write_vol.m | grep -o 'spm_[a-zA-z0-9_]*' | tr '();' ' ' | awk '{print }' | sort | uniq >> SPM_FUNC_GRAPH; echo -e '\n' >> SPM_FUNC_GRAPH; done
+Command used to obtain this output (on Mac OS X using BSD functions):
+for func in $(ls *.m); do echo ${func}: >> SPM_FUNC_CALLS; cat ${func} | grep -v ^% | grep -o 'spm_[a-zA-z0-9_]*' | tr '();' ' ' | awk '{print }' | sort | uniq >> SPM_FUNC_CALLS; echo -e '\n' >> SPM_FUNC_CALLS; done
