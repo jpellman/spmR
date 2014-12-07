@@ -1,0 +1,121 @@
+spm_iterator(SPM, 'SPM')
+SPM.xY :struct
+ 
+SPM.xY.RT :double
+ 
+SPM.xY.P :char
+ 
+SPM.xY.VY :struct
+ 
+SPM.xBF :struct
+ 
+SPM.xBF.UNITS :char
+ 
+SPM.xBF.dt :double
+ 
+SPM.xBF.T :double
+ 
+SPM.xBF.T0 :double
+ 
+SPM.xBF.name :char
+ 
+SPM.xBF.length :double
+ 
+SPM.xBF.order :double
+ 
+SPM.xBF.bf :double
+ 
+SPM.xBF.Volterra :double
+ 
+SPM.nscan :double
+ 
+SPM.Sess :struct
+Structural array field names: 
+    'U'
+    'C'
+    'row'
+    'col'
+    'Fc'
+
+ 
+SPM.xGX :struct
+ 
+SPM.xGX.iGXcalc :char
+ 
+SPM.xGX.sGXcalc :char
+ 
+SPM.xGX.sGMsca :char
+ 
+SPM.xGX.rg :double
+ 
+SPM.xGX.GM :double
+ 
+SPM.xGX.gSF :double
+ 
+SPM.xX :struct
+ 
+SPM.xX.K :struct
+Structural array field names: 
+    'HParam'
+    'row'
+    'RT'
+    'X0'
+
+ 
+SPM.xX.X :double
+ 
+SPM.xX.iH :double
+ 
+SPM.xX.iC :double
+ 
+SPM.xX.iB :double
+ 
+SPM.xX.iG :double
+ 
+SPM.xX.name :cell
+Types of each cell element: 
+char
+ 
+SPM.xVi :struct
+ 
+SPM.xVi.form :char
+ 
+SPM.xVi.Vi :cell
+Types of each cell element: 
+double
+ 
+SPM.SPMid :char
+ 
+SPM.xM :struct
+ 
+SPM.xM.T :double
+ 
+SPM.xM.TH :double
+ 
+SPM.xM.I :double
+ 
+SPM.xM.VM :double
+ 
+SPM.xM.xs :struct
+ 
+SPM.xM.xs.Masking :char
+ 
+SPM.xsDes :struct
+ 
+SPM.xsDes.Basis_functions :char
+ 
+SPM.xsDes.Number_of_sessions :char
+ 
+SPM.xsDes.Trials_per_session :char
+ 
+SPM.xsDes.Interscan_interval :char
+ 
+SPM.xsDes.High_pass_Filter :char
+ 
+SPM.xsDes.Global_calculation :char
+ 
+SPM.xsDes.Grand_mean_scaling :char
+ 
+SPM.xsDes.Global_normalisation :char
+ 
+diary

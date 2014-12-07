@@ -1,0 +1,292 @@
+spm_iterator(SPM,'SPM')
+SPM.xVi :struct
+ 
+SPM.xVi.I :double
+ 
+SPM.xVi.V :double
+ 
+SPM.xVi.UFp :double
+ 
+SPM.xVi.CY :double
+ 
+SPM.xY :struct
+ 
+SPM.xY.P :cell
+Types of each cell element: 
+char
+ 
+SPM.xY.VY :struct
+ 
+SPM.nscan :double
+ 
+SPM.xX :struct
+ 
+SPM.xX.X :double
+ 
+SPM.xX.iH :double
+ 
+SPM.xX.iC :double
+ 
+SPM.xX.iB :double
+ 
+SPM.xX.iG :double
+ 
+SPM.xX.name :cell
+Types of each cell element: 
+char
+ 
+SPM.xX.I :double
+ 
+SPM.xX.sF :cell
+Types of each cell element: 
+char
+ 
+SPM.xX.K :double
+ 
+SPM.xX.W :double
+ 
+SPM.xX.xKXs :struct
+ 
+SPM.xX.xKXs.X :double
+ 
+SPM.xX.xKXs.tol :double
+ 
+SPM.xX.xKXs.ds :double
+ 
+SPM.xX.xKXs.u :double
+ 
+SPM.xX.xKXs.v :double
+ 
+SPM.xX.xKXs.rk :double
+ 
+SPM.xX.xKXs.oP :double
+ 
+SPM.xX.xKXs.oPp :double
+ 
+SPM.xX.xKXs.ups :double
+ 
+SPM.xX.xKXs.sus :double
+ 
+SPM.xX.pKX :double
+ 
+SPM.xX.V :double
+ 
+SPM.xX.trRV :double
+ 
+SPM.xX.trRVRV :double
+ 
+SPM.xX.erdf :double
+ 
+SPM.xX.Bcov :double
+ 
+SPM.xX.nKX :double
+ 
+SPM.xC :double
+ 
+SPM.xGX :struct
+ 
+SPM.xGX.iGXcalc :double
+ 
+SPM.xGX.sGXcalc :char
+ 
+SPM.xGX.rg :double
+ 
+SPM.xGX.iGMsca :double
+ 
+SPM.xGX.sGMsca :char
+ 
+SPM.xGX.GM :double
+ 
+SPM.xGX.gSF :double
+ 
+SPM.xGX.iGC :double
+ 
+SPM.xGX.sGC :char
+ 
+SPM.xGX.gc :double
+ 
+SPM.xGX.iGloNorm :double
+ 
+SPM.xGX.sGloNorm :char
+ 
+SPM.xM :struct
+ 
+SPM.xM.T :double
+ 
+SPM.xM.TH :double
+ 
+SPM.xM.I :double
+ 
+SPM.xM.VM :double
+ 
+SPM.xM.xs :struct
+ 
+SPM.xM.xs.Analysis_threshold :char
+ 
+SPM.xM.xs.Implicit_masking :char
+ 
+SPM.xM.xs.Explicit_masking :char
+ 
+SPM.xsDes :struct
+ 
+SPM.xsDes.Design :char
+ 
+SPM.xsDes.Global_calculation :char
+ 
+SPM.xsDes.Grand_mean_scaling :char
+ 
+SPM.xsDes.Global_normalisation :char
+ 
+SPM.xsDes.Parameters :cell
+Types of each cell element: 
+char
+ 
+SPM.swd :char
+ 
+SPM.xVol :struct
+ 
+SPM.xVol.XYZ :double
+ 
+SPM.xVol.M :double
+ 
+SPM.xVol.iM :double
+ 
+SPM.xVol.DIM :double
+ 
+SPM.xVol.FWHM :double
+ 
+SPM.xVol.R :double
+ 
+SPM.xVol.S :double
+ 
+SPM.xVol.VRpv :struct
+ 
+SPM.xVol.VRpv.fname :char
+ 
+SPM.xVol.VRpv.dim :double
+ 
+SPM.xVol.VRpv.dt :double
+ 
+SPM.xVol.VRpv.mat :double
+ 
+SPM.xVol.VRpv.pinfo :double
+ 
+SPM.xVol.VRpv.descrip :char
+ 
+SPM.xVol.VRpv.n :double
+ 
+SPM.xVol.VRpv.private :nifti
+ 
+SPM.Vbeta :struct
+ 
+SPM.Vbeta.fname :char
+ 
+SPM.Vbeta.dim :double
+ 
+SPM.Vbeta.dt :double
+ 
+SPM.Vbeta.mat :double
+ 
+SPM.Vbeta.pinfo :double
+ 
+SPM.Vbeta.descrip :char
+ 
+SPM.Vbeta.n :double
+ 
+SPM.Vbeta.private :nifti
+ 
+SPM.VResMS :struct
+ 
+SPM.VResMS.fname :char
+ 
+SPM.VResMS.dim :double
+ 
+SPM.VResMS.dt :double
+ 
+SPM.VResMS.mat :double
+ 
+SPM.VResMS.pinfo :double
+ 
+SPM.VResMS.descrip :char
+ 
+SPM.VResMS.n :double
+ 
+SPM.VResMS.private :nifti
+ 
+SPM.VM :struct
+ 
+SPM.VM.fname :char
+ 
+SPM.VM.dim :double
+ 
+SPM.VM.dt :double
+ 
+SPM.VM.mat :double
+ 
+SPM.VM.pinfo :double
+ 
+SPM.VM.descrip :char
+ 
+SPM.VM.n :double
+ 
+SPM.VM.private :nifti
+ 
+SPM.xCon :struct
+ 
+SPM.xCon.name :char
+ 
+SPM.xCon.STAT :char
+ 
+SPM.xCon.c :double
+ 
+SPM.xCon.X0 :struct
+ 
+SPM.xCon.X0.ukX0 :double
+ 
+SPM.xCon.iX0 :char
+ 
+SPM.xCon.X1o :struct
+ 
+SPM.xCon.X1o.ukX1o :double
+ 
+SPM.xCon.eidf :double
+ 
+SPM.xCon.Vcon :struct
+ 
+SPM.xCon.Vcon.fname :char
+ 
+SPM.xCon.Vcon.dim :double
+ 
+SPM.xCon.Vcon.dt :double
+ 
+SPM.xCon.Vcon.mat :double
+ 
+SPM.xCon.Vcon.pinfo :double
+ 
+SPM.xCon.Vcon.descrip :char
+ 
+SPM.xCon.Vcon.n :double
+ 
+SPM.xCon.Vcon.private :nifti
+ 
+SPM.xCon.Vspm :struct
+ 
+SPM.xCon.Vspm.fname :char
+ 
+SPM.xCon.Vspm.dim :double
+ 
+SPM.xCon.Vspm.dt :double
+ 
+SPM.xCon.Vspm.mat :double
+ 
+SPM.xCon.Vspm.pinfo :double
+ 
+SPM.xCon.Vspm.descrip :char
+ 
+SPM.xCon.Vspm.n :double
+ 
+SPM.xCon.Vspm.private :nifti
+ 
+SPM.SPMid :char
+ 
+diary
