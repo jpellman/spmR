@@ -1,5 +1,7 @@
 # spmR: an R package for fMRI data analysis
 
+**Note: This project is currently on the backburner due to other pursuits.  I am not actively working on it, but may return in the future.  Feel free to fork and make any improvements as you see fit.**
+
 This is the source code for spmR, an R implementation of Statistical Parametric Mapping, a mode of analysis used in neuroimaging.  
 
 Recently, the present maintainer (John Pellman) has obtained the source code from the original author (Yves Rosseel) but ~~has not modified it in any way~~ has modified it only lightly.  By placing the code on GitHub, the present maintainer hopes to make it readily accessible for future development.  Most of his present work involves either documenting it or dreaming up ways to make it work better with R.
@@ -35,3 +37,6 @@ The official website of the creators of SPM: http://www.fil.ion.ucl.ac.uk/spm/
 
 # Discoveries:
 * spm_filter.R has a convenient notice that the other files lack 
+
+# Other thoughts:
+* Port SPM wholly/partially to Julia and transform this into a set of bindings to Julia functions.
