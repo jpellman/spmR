@@ -1,5 +1,7 @@
 # spmR: an R package for fMRI data analysis
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 **Note: This project is currently on the backburner due to other pursuits.  I am not actively working on it, but may return in the future.  Feel free to fork and make any improvements as you see fit.**
 
 This is the source code for spmR, an R implementation of Statistical Parametric Mapping, a mode of analysis used in neuroimaging.  
